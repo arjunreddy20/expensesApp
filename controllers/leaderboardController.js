@@ -15,4 +15,5 @@ const LeaderboardController = {
     }
 };
 
+
 module.exports = LeaderboardController;

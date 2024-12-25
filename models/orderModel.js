@@ -43,4 +43,5 @@ Order.findByOrderId = async function(orderId) {
     return await Order.findOne({ where: { orderId } });
 };
 
+
 module.exports = Order;

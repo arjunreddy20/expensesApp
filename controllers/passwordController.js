@@ -72,4 +72,5 @@ const PasswordController = {
     }
 };
 
+
 module.exports = PasswordController;

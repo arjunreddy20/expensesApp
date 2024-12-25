@@ -13,6 +13,7 @@ const NoteController = {
             res.status(500).json({ message: 'Error fetching notes' });
         }
     },
+    
     addNote: async (req, res) => {
         try {
             const { note, date } = req.body;

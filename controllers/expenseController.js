@@ -5,7 +5,6 @@ const FileUrl = require('../models/fileUrlModel'); // Import the FileUrl model
 const s3Service = require('../services/s3Service');
 require('dotenv').config(); 
 
-
 const ExpenseController = {
     getMonthlyExpenses: async (req, res) => {
         const { page = 1, limit = 10 } = req.query; // Get page and limit from query parameters

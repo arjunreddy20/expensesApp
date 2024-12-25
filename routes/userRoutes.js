@@ -4,7 +4,9 @@ const ExpenseController = require('../controllers/expenseController');
 const NoteController = require('../controllers/noteController');
 const userAuthentication = require('../middleware/userAuthentication');
 const FileUrl = require('../models/fileUrlModel');
+
 const router = express.Router();
+
 
 router.get('/user-details', userAuthentication, UserController.getUserDetails);
 router.get('/expenses/monthly', userAuthentication, ExpenseController.getMonthlyExpenses);

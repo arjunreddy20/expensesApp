@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         downloadButton.disabled = false;
     }
 
-    // Fetch monthly expenses from localStorage
+
     const monthlyExpensesData = JSON.parse(localStorage.getItem('monthlyExpenses'));
     if (!monthlyExpensesData ) {
         alert('No monthly expenses data found');

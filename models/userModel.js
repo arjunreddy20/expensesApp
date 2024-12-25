@@ -38,7 +38,7 @@ User.findByEmail = async function(email) {
     return await User.findOne({ where: { email } });
 };
 
-// Add the findById method
+
 User.findById = async function(id) {
     return await User.findOne({ where: { id } });
 };

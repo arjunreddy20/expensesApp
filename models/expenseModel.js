@@ -36,4 +36,5 @@ const Expense = sequelize.define('Expense', {
     timestamps: false
 });
 
+
 module.exports = Expense;

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const leaderboardList = document.getElementById('leaderboardList');
     const viewInsightsButton = document.getElementById('viewInsights');
     const expensesPerPageSelect = document.getElementById('expensesPerPage');
-    const token = localStorage.getItem('token'); // Get token from localStorage
+    const token = localStorage.getItem('token'); 
 
     // Fetch user details
     const fetchUserDetails = async () => {

@@ -28,4 +28,5 @@ const Note = sequelize.define('Note', {
     timestamps: false
 });
 
+
 module.exports = Note;

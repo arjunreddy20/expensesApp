@@ -32,4 +32,5 @@ const ForgotPasswordRequests = sequelize.define('ForgotPasswordRequests', {
     timestamps: true
 });
 
+
 module.exports = ForgotPasswordRequests;

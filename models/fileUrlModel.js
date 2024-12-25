@@ -15,6 +15,7 @@ const FileUrl = sequelize.define('FileUrl', {
             key: 'id'
         }
     },
+    
     file_url: {
         type: DataTypes.STRING,
         allowNull: false
