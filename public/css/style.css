@@ -1,0 +1,131 @@
+body {
+    background-color: #f0f8ff;
+    font-family: Arial, sans-serif;
+}
+
+#app {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#monthlyTable tbody tr.salary {
+    background-color: #e0f7fa;
+}
+
+#yearlyTable tfoot td {
+    color: green;
+}
+
+#downloadButton {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#downloadButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #a49ea1;
+}
+
+#app {
+    margin-top: 50px;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+}
+textarea {
+    margin: 2px;
+    padding: 10px;
+    width: 80%;
+}
+.date{
+    margin: 5px;
+    padding: 10px;
+    width: 20%;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color:  rgb(89, 103, 67);
+    border-radius: 10%;
+    color: #f4f4f4;
+}
+.options{
+    margin-top: 10px;
+    padding: 10px;
+    width: 65%;
+}
+h3 {
+    margin-top: 0;
+    background-color: rgb(89, 103, 67);
+    padding: 20px;
+    color: #f4f4f4;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+  }
+
+button:hover {
+    background-color: brown;
+}
+.salary-row {
+    background-color: #dff0d8;
+    color: #3c763d; 
+}
+.insights-head{
+    background-color: rgb(89, 103, 67);
+    padding: 20px;
+    color: #f4f4f4;
+    margin-top: 0px;
+}
+#downloadLinksContainer a {
+    display: block;
+    margin-bottom: 5px;
+}

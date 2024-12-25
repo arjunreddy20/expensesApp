@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <h3><strong>Dashboard</strong>
+        <button id="buyPremium" class="buyPremium">Buy Premium</button>
+        <button id="showLeaderboard" class="showLeaderboard">Show Leaderboard</button>
+        <button id="viewInsights" class="viewInsights">View Insights</button>
+    </h3>
+    
+    <div id="dashboard" class="dashboard">
+        <form id="expenseForm" class="form">
+            <label for="amount"><strong>Amount:</strong> </label>
+            <input class="amo" type="number" id="amount" name="amount" placeholder="Choose Expense Amount" required/>
+            <br>
+            <br>
+            <label for="description"><strong>Description:</strong> </label>
+            <input class="des" type="text" id="description" name="description" placeholder="Choose description:" required/>
+            <br>
+            <br>
+            <label for="category"><strong>Choose a category:</strong></label>
+            <select class="options" id="category" name="category" required>
+                <option value="" disabled selected>Select</option>
+                <option value="food">Food</option>
+                <option value="petrol">Petrol</option>
+                <option value="salary">Salary</option>
+                <option value="rent">Rent</option>
+                <option value="shopping">Shopping</option>
+                <option value="travel">Travel</option>
+                <option value="movie">Movie</option>
+                <option value="grocery">Grocery</option>
+                <option value="medical">Medical</option>
+                <option value="electricity">Electricity</option>
+                <option value="water">Water</option>
+                <option value="internet">Internet</option>
+                <option value="emi">EMI</option>
+                <option value="furniture">Furniture</option>
+                <option value="others">Others</option>
+            </select>
+            <br>
+            <br>
+            <button id="addExpense" class="button" type="submit">Add Expense</button>
+            <br>
+            <br>
+        </form>
+
+        <div>
+            <label for="expensesPerPage"><strong>Expenses per page:</strong> </label>
+            <select id="expensesPerPage">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+            </select>
+        </div>
+        <div id="paginationContainer"></div>
+        <ul class="list" id="expenseList"></ul>
+        <form>
+            <div class="noteForm">
+                <input type="date" id="date" class="date" placeholder="dd/mm/yyyy" required/><br><br>
+                <textarea name="note" id="note" placeholder="Add Note Here" required></textarea><br><br>
+                <button id="addNote" class="button" type="submit">Add Note</button><br><br>
+            </div>
+        </form>
+        <div id="leaderboard" style="display: none;">
+            <h3>Leaderboard</h3>
+            <ul id="leaderboardList"></ul>
+        </div>
+
+    </div> 
+    
+    <script src="../react/dashboard.js"></script>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="../react/login.js"></script>
+</body>
+</html>
